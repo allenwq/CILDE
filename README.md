@@ -21,6 +21,8 @@ $ python style_train.py
 
 ```
 
+Pretrained models are avaliable for downloading here: https://huggingface.co/real-donald-trump/5242-models
+
 ## Train the Posture Control Model
 Download an existing OpenPose model from https://huggingface.co/lllyasviel/ControlNet/blob/main/models/control_sd15_openpose.pth and save it to `models/control_sd15_openpose.pth`
 Running the necessary preprocessing scripts. See next section
@@ -50,4 +52,6 @@ $ python preprocess/pose.py
 $ python python preprocess/img-to-prompt/main.py
 ```
 
-
+# 3rd Party UI
+You may use https://github.com/AUTOMATIC1111/stable-diffusion-webui to use our models for inference. 
+Put the both ControlNet models under `models/ControlNet` and LoRA models under `models/Lora` then start the server. 
