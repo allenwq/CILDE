@@ -7,7 +7,7 @@ from cldm.logger import ImageLogger
 from cldm.model import create_model, load_state_dict
 
 
-resume_path = './models/control_sd15_depth.pth'
+resume_path = './models/control_sd15_openpose.pth'
 batch_size = 4
 logger_freq = 300
 learning_rate = 1e-5
